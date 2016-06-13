@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlt_name"
+        android:background="#1565C0"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/lbl_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:hint="Nom de la ville"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/rlt_name"
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:background="#1E88E5"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/img_code_header"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_02d" />
+
+            <TextView
+                android:id="@+id/temp_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/img_code_header"
+                android:text="26°"
+                android:textColor="@android:color/white"
+                android:textSize="55sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
